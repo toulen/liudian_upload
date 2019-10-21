@@ -1,0 +1,33 @@
+{
+  "name":"toulen/liudian_upload",
+  "description": "Liudian Ajax Upload Aliyun",
+  "keywords": ["framework", "laravel", "admin"],
+  "license": "MIT",
+  "require": {
+    "php": "^7.0.0",
+    "laravel/framework": "5.5.*",
+    "laravel/tinker": "^1.0",
+    "aliyuncs/oss-sdk-php": "^2.3"
+  },
+  "autoload": {
+    "classmap": [
+
+    ],
+    "psr-4": {
+      "Liudian\\Upload\\": "src/"
+    },
+    "files": [
+    ]
+  },
+  "extra": {
+    "laravel" : {
+      "providers" : [
+        "Liudian\\Upload\\Providers\\LiudianUploadServiceProvider",
+        "Liudian\\Upload\\Providers\\RouteServiceProvider"
+      ],
+      "aliases":{
+        "OssFile":"Liudian\\Upload\\Facades\\OssFile"
+      }
+    }
+  }
+}
