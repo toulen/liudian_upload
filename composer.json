@@ -5,7 +5,7 @@
   "license": "MIT",
   "require": {
     "php": "^7.0.0",
-    "laravel/framework": "5.5.*",
+    "laravel/framework": "^5.5",
     "laravel/tinker": "^1.0",
     "aliyuncs/oss-sdk-php": "^2.3"
   },
